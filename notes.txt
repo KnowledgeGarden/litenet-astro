@@ -2,6 +2,8 @@ GOALS
 - understand what it takes to put LiteNet into Astro
 References
 - https://daily.dev/blog/get-to-know-astro-the-web-framework-for-content-driven-websites
+- https://astro.build/integrations/
+- https://dev.to/diploi/astro-with-postgresql-1mpf
 
 TODO
 
