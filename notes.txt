@@ -6,9 +6,11 @@ References
 - https://dev.to/diploi/astro-with-postgresql-1mpf
 
 TODO
+- finish filling in .env file
 
 BUGS
 
 Journal
   20250407
     First cut, upgraded to node22 and created basic Astro project
+    Added postgres dependencies
