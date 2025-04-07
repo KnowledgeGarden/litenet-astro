@@ -6,7 +6,9 @@ References
 - https://dev.to/diploi/astro-with-postgresql-1mpf
 
 TODO
-- finish filling in .env file
+- finish filling in .env file - did 
+- need DB schema and db drivers for LiteNet
+- need password-less authentication and user management
 
 BUGS
 
