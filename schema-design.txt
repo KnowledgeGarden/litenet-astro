@@ -1,0 +1,8 @@
+LiteNet 3 had 3 tables (JSON lists)
+- topics
+- journal
+- users
+
+What do we want to add to that?
+That was essentially a collection of files, each a JSONArray of JSONObjects, one for each entry.
+We plan to break that up into tables which take apart the JSON properties into columns

@@ -4,6 +4,11 @@ References
 - https://daily.dev/blog/get-to-know-astro-the-web-framework-for-content-driven-websites
 - https://astro.build/integrations/
 - https://dev.to/diploi/astro-with-postgresql-1mpf
+- https://dev.to/flippedcoding/implementing-passwordless-authentication-in-node-js-43m0
+- https://medium.com/@keaindrak/how-to-implement-passwordless-authentication-in-node-js-using-simplewebauthn-5cde4465267f
+- https://github.com/florianheinemann/passwordless
+- !!! https://everythingcs.dev/blog/astro-js-passwordless-magic-link-authentication/
+--- ^^ downloaded repo sample code
 
 TODO
 - finish filling in .env file - did 
