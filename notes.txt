@@ -1,0 +1,12 @@
+GOALS
+- understand what it takes to put LiteNet into Astro
+References
+- https://daily.dev/blog/get-to-know-astro-the-web-framework-for-content-driven-websites
+
+TODO
+
+BUGS
+
+Journal
+  20250407
+    First cut, upgraded to node22 and created basic Astro project
