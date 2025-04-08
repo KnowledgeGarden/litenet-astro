@@ -1,5 +1,14 @@
 GOALS
 - understand what it takes to put LiteNet into Astro
+- thinking about pivot browsing:
+-- users
+-- topics
+-- relation types
+--???
+- Thinking about collaboration, which might entail LiteWeight features combined with LiteNet
+-- Channels for major topics, with IBIS cards
+-- DM channels among users and groups
+- Potential to be a feature in a K-Hub
 References
 - https://daily.dev/blog/get-to-know-astro-the-web-framework-for-content-driven-websites
 - https://astro.build/integrations/
@@ -18,6 +27,12 @@ TODO
 BUGS
 
 Journal
+  20250408
+    More thinking about
+      db schema
+      pivot browsing
+      collaboration
   20250407
     First cut, upgraded to node22 and created basic Astro project
     Added postgres dependencies
+    Started DBInterface in types/
