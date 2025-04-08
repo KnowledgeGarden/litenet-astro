@@ -18,6 +18,8 @@ References
 - https://github.com/florianheinemann/passwordless
 - !!! https://everythingcs.dev/blog/astro-js-passwordless-magic-link-authentication/
 --- ^^ downloaded repo sample code
+- https://github.com/brianc/node-postgres/blob/master/docs/pages/apis/client.mdx
+
 
 TODO
 - finish filling in .env file - did 
