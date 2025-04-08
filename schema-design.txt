@@ -1,7 +1,79 @@
 LiteNet 3 had 3 tables (JSON lists)
 - topics
+Backlinks can be their own table for a join query
+URLlist can be own table for join query
+Nodetypes: one of "topic", "relation"
+{
+    "id": "TOP_kate_steyer",
+    "userId": "420bd258-7a0d-4a0b-89a0-dd6a6002c098",
+    "userHandle": "Jack",
+    "nodeType": "topic",
+    "label": "Kate Steyer",
+    "date": {
+        "$$date": 1585944359553
+    },
+    "urllist": [],
+    "backlinks": [
+        "JNL_ff0a8115-cd4a-429f-b291-c3ad3bd46b2b",
+        "JNL_ff0a8115-cd4a-429f-b291-c3ad3bd46b2b",
+        "JNL_18725ede-5b0d-4205-b322-805f249285a6"
+    ],
+    "_id": "08Eq82Hcb6XvDA4y"
+}
+A relation is a topic. In the old LiteNet, they were just JSON objects
+In a postgres impl, they might be just columns, or they might be a relation table
+{
+    "id": "TOP_TOP_openedx_github_repocontainTOP_openedx",
+    "userId": "420bd258-7a0d-4a0b-89a0-dd6a6002c098",
+    "userHandle": "Jack",
+    "nodeType": "relation",
+    "type": "contain",
+    "label": "OpenEdX github repo contain OpenEdX",
+    "date": {
+        "$$date": 1586212448944
+    },
+    "source": "<a href=\"/topic/TOP_openedx_github_repo\">OpenEdX github repo</a>",
+    "target": "<a href=\"/topic/TOP_openedx\">OpenEdX</a>",
+    "sourceId": "TOP_openedx_github_repo",
+    "targetId": "TOP_openedx",
+    "backlinks": [
+        "JNL_9e907930-54d4-43d7-b24f-1cb40a4116e2"
+    ],
+    "urllist": [],
+    "_id": "3NCRjEtFbBBsf6cA"
+}
 - journal
+Journal entries are not like blog posts with a title and body blocks, just text and URLS
+URLlist can be its own table for a join query
+"raw" may not be needed
+{
+    "raw": "<p>Because [[ChronoZoom]] is intended for anyone interested in the emerging field of [[Big History]], or in any of the component [[historical regime]]s ([[cosmology]], [[astronomy]], [[geology]], [[paleontology]], [[evolutionary biology]], [[archaeology]] and [[historiography]]), it may become the critical, first-response tool for educators and students of all branches of [[history]], and for the general public. [[Global Biography]]<br></p>",
+    "id": "JNL_1590ceeb-b361-4e31-91b3-b11001f59b6e",
+    "userId": "420bd258-7a0d-4a0b-89a0-dd6a6002c098",
+    "userHandle": "Jack",
+    "text": "<p>Because  <a href=\"/topic/TOP_chronozoom\">ChronoZoom</a>  is intended for anyone interested in the emerging field of  <a href=\"/topic/TOP_big_history\">Big History</a> , or in any of the component  <a href=\"/topic/TOP_historical_regime\">historical regime</a> s ( <a href=\"/topic/TOP_cosmology\">cosmology</a> ,  <a href=\"/topic/TOP_astronomy\">astronomy</a> ,  <a href=\"/topic/TOP_geology\">geology</a> ,  <a href=\"/topic/TOP_paleontology\">paleontology</a> ,  <a href=\"/topic/TOP_evolutionary_biology\">evolutionary biology</a> ,  <a href=\"/topic/TOP_archaeology\">archaeology</a>  and  <a href=\"/topic/TOP_historiography\">historiography</a> ), it may become the critical, first-response tool for educators and students of all branches of  <a href=\"/topic/TOP_history\">history</a> , and for the general public.  <a href=\"/topic/TOP_global_biography\">Global Biography</a> <br></p>",
+    "date": {
+        "$$date": 1586541496743
+    },
+    "urllist": [
+        "http://eps.berkeley.edu/~saekow/chronozoom/projectinformation/index.html"
+    ],
+    "_id": "0G3Eh8Ukg8bg9RBN"
+}
 - users
+We will not use passwords
+We do want to be able to paint a use's contributions on a view
+  That can come from a query against userID on journal and topics
+    or maybe just journal entries
+      Assuming this remains as a journal-based platform
+{
+    "id": "420bd258-7a0d-4a0b-89a0-dd6a6002c098",
+    "pwd": "$2a$10$2fz0FqZZ5dggBiY2Xw97IeVETAes9cWPj0u.hTsoWZbOp.GkgcPiS",
+    "email": "jackpark@topicquests.org",
+    "handle": "Jack",
+    "fullName": "Jack Park",
+    "_id": "1iXNGEqgNHguPJBp"
+}
 
 What do we want to add to that?
 That was essentially a collection of files, each a JSONArray of JSONObjects, one for each entry.
