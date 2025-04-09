@@ -45,6 +45,8 @@ Journal
     Question: How could QP Theory fit into this platform?
     Question: should backside be, say, Java to integrate with OpenSherlock?
       That means queries are not fronside, but backside, returning JSON stuff
+      This means: boot backside, then boot frontside which makes ajax calls to populate
+        views -- view first 
     Pretty much decided to use BigInts for all IDs rather than strings
   20250408
     More thinking about
