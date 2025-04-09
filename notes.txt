@@ -13,6 +13,10 @@ References
 - https://daily.dev/blog/get-to-know-astro-the-web-framework-for-content-driven-websites
 - https://astro.build/integrations/
 - https://dev.to/diploi/astro-with-postgresql-1mpf
+-- https://github.com/neondatabase/neon server
+-- https://github.com/neondatabase/serverless client
+-- https://docs.astro.build/en/guides/backend/neon/
+
 - https://dev.to/flippedcoding/implementing-passwordless-authentication-in-node-js-43m0
 - https://medium.com/@keaindrak/how-to-implement-passwordless-authentication-in-node-js-using-simplewebauthn-5cde4465267f
 - https://github.com/florianheinemann/passwordless
@@ -35,9 +39,13 @@ Journal
     Thinking about "rapid lists"; you pick, say, a disease and it lists any topic
       which is connected to that, including nutrients, etc.
       Possibly paint with echarts so that you can walk "the graph"
+      This is essenially an outline view, which, with hyperlinks, lets you navigate
       That requires a Join query off the root topic to find links in relations
         which are either sources or targets
     Question: How could QP Theory fit into this platform?
+    Question: should backside be, say, Java to integrate with OpenSherlock?
+      That means queries are not fronside, but backside, returning JSON stuff
+    Pretty much decided to use BigInts for all IDs rather than strings
   20250408
     More thinking about
       db schema
