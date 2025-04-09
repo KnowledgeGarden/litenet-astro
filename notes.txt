@@ -19,6 +19,7 @@ References
 - !!! https://everythingcs.dev/blog/astro-js-passwordless-magic-link-authentication/
 --- ^^ downloaded repo sample code
 - https://github.com/brianc/node-postgres/blob/master/docs/pages/apis/client.mdx
+- https://echarts.apache.org/en/index.html  for graphs
 
 
 TODO
@@ -29,6 +30,13 @@ TODO
 BUGS
 
 Journal
+  20240409
+    Thinking about "rapid lists"; you pick, say, a disease and it lists any topic
+      which is connected to that, including nutrients, etc.
+      Possibly paint with echarts so that you can walk "the graph"
+      That requires a Join query off the root topic to find links in relations
+        which are either sources or targets
+    Question: How could QP Theory fit into this platform?
   20250408
     More thinking about
       db schema

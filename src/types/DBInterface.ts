@@ -1,6 +1,8 @@
 
 interface DBInterface {
-
+  // Note: LiteNet composed ID values from Strings for Topics
+  //  That was for finding relations. Could use BigInts
+  // Journal IDs can be BigInt
   // General APIs
   /**
    * 

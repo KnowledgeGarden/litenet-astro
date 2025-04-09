@@ -3,6 +3,9 @@ LiteNet 3 had 3 tables (JSON lists)
 Backlinks can be their own table for a join query
 URLlist can be own table for join query
 Nodetypes: one of "topic", "relation"
+Note: LiteNet composed ID values from Strings, not numbers for topics
+    That was for the ability to find relations from topics - may not need
+    Journal entries can be BigInts
 {
     "id": "TOP_kate_steyer",
     "userId": "420bd258-7a0d-4a0b-89a0-dd6a6002c098",
@@ -22,6 +25,9 @@ Nodetypes: one of "topic", "relation"
 }
 A relation is a topic. In the old LiteNet, they were just JSON objects
 In a postgres impl, they might be just columns, or they might be a relation table
+Relation table suits pivot queries better
+    id, source, reln, target
+    
 {
     "id": "TOP_TOP_openedx_github_repocontainTOP_openedx",
     "userId": "420bd258-7a0d-4a0b-89a0-dd6a6002c098",
