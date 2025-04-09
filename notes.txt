@@ -24,8 +24,9 @@ References
 
 TODO
 - finish filling in .env file - did 
-- need DB schema and db drivers for LiteNet
-- need password-less authentication and user management
+1- need DB schema and db drivers for LiteNet
+2- need password-less authentication and user management
+3- begin importing LiteNet code
 
 BUGS
 
