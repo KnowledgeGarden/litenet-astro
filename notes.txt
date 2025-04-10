@@ -31,6 +31,7 @@ TODO
 1- need DB schema and db drivers for LiteNet
 2- need password-less authentication and user management
 3- begin importing LiteNet code
+4- make relation vocabularies editable in the app
 
 BUGS
 
